@@ -1,0 +1,230 @@
+Pattern
+
+*
+**
+***
+****
+
+Program
+
+#include <stdio.h>
+void main() 
+{
+   for(int i=1;i<=4;i++)
+   {
+       for(int j=1;j<=i;j++)
+       {
+           printf("*");
+       }
+       printf("\n");
+   }
+}
+
+--------------------------------------------------------------------------------
+Pattern
+
+1
+1 2
+1 2 3
+1 2 3 4
+
+Program
+
+#include <stdio.h>
+void main() 
+{
+   for(int i=1;i<=4;i++)
+   {
+       for(int j=1;j<=i;j++)
+       {
+           printf("%d ",j);
+       }
+       printf("\n");
+   }
+}
+
+Python
+
+n = int(input("Enter the Number : "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+--------------------------------------------------------------------------------
+Pattern
+
+1
+2 2
+3 3 3
+4 4 4 4
+
+C Program
+
+#include <stdio.h>
+void main() 
+{
+   for(int i=1;i<=4;i++)
+   {
+       for(int j=1;j<=i;j++)
+       {
+           printf("%d ",i);
+       }
+       printf("\n");
+   }
+}
+
+Python Program
+
+n = int(input("Enter the Number : "))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i,end=" ")
+    print()
+
+--------------------------------------------------------------------------------
+Pattern
+
+* * * *
+* * * 
+* *
+* 
+
+C Program - Solution 1
+
+#include <stdio.h>
+void main() 
+{
+   int n = 4;
+   for(int i=1;i<=4;i++)
+   {
+       for(int j=1;j<=n;j++)
+       {
+           printf("*");
+       }
+       n--;
+       printf("\n");
+   }
+}
+
+C Program - Solution 2
+
+#include <stdio.h>
+void main() 
+{
+   int n = 4;
+   for(int i=1;i<=4;i++)
+   {
+       for(int j=1;j<=n-i+1;j++)
+       {
+           printf("*");
+       }
+       printf("\n");
+   }
+}
+
+Python Program
+
+n = int(input("Enter the Number : "))
+for i in range(0,n):
+    for j in range(0,n-i):
+        print("*",end=" ")
+    print()
+
+--------------------------------------------------------------------------------
+Pattern
+
+1 2 3 4
+1 2 3
+1 2 
+1
+
+C Program
+#include <stdio.h>
+void main() 
+{
+   int n = 4;
+   for(int i=1;i<=4;i++)
+   {
+       for(int j=1;j<=n-i+1;j++)
+       {
+           printf("%d ",j);
+       }
+       printf("\n");
+   }
+}
+
+Python Program
+
+n = int(input("Enter the Number : "))
+for i in range(1,n+1):
+   for j in range(1,n+2-i):
+       print(j,end = "")
+   print()
+
+--------------------------------------------------------------------------------
+Pattern
+input = 4
+
+         *    
+      *  *  *  
+   *  *  *  *  *
+*  *  *  *  *  *  *
+
+C Program
+
+#include <stdio.h>
+void main() 
+{
+   int n = 4;
+   for(int i=1;i<=4;i++)
+   {
+      for(int j=1;j<=n-i;j++)
+      {
+          printf(" ");
+      }
+      
+      for(int k=1;k<=2*i-1;k++)
+      {
+          printf("*");
+      }
+    
+
+      for(int j=1;j<=n-i;j++)
+      {
+          printf(" ");
+      }
+
+      
+       printf("\n");
+   }
+}
+
+Python Program
+
+n = int(input("Enter the Number : "))
+for i in range(1,n+1):
+   for j in range(1,n-i+1):
+       print(" ",end = "")
+       
+   for k in range(0,2*i-1):
+       print("*",end = "")       
+       
+   for j in range(1,n-i+1):
+       print(" ",end = "")
+print()
+
+
+--------------------------------------------------------------------------------
+Pattern
+
+*  *  *  *  *  *  *
+   *  *  *  *  *
+      *  *  *  
+         *    
+
+C Program
+
+
+
+
+Python Program
